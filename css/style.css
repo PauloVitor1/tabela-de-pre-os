@@ -1,0 +1,207 @@
+@import url(../css/cores.css);
+
+/* Aplicando reset no CSS e aplicando fonte padrão */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  background-color: var(--cor_5);
+  text-align: center;
+  gap: 2rem;
+  padding: 6rem 1rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.12em;
+}
+
+.content_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.740625rem;
+  margin: 0 auto;
+}
+
+.card_item {
+  max-width: 240px;
+  width: 100%;
+  padding: 1.75rem;
+  background-color: var(--cor_7);
+  border-radius: 0.875rem;
+  box-shadow: 2.96638px 2.96638px 5.69742px rgba(0, 0, 0, 0.1);
+}
+
+.card_item img {
+  max-width: 89.31px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.preco {
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--cor_3);
+}
+
+.preco span {
+  margin-left: 5px;
+  font-size: 17.286px;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: var(--cor_8);
+}
+
+.title {
+  font-size: 1.9206625rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0.055em;
+  margin-bottom: 30px;
+}
+
+.list {
+  color: var(--cor_2);
+  font-size: 17.286px;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.list li {
+  margin-bottom: 14.57px;
+}
+
+.list li:last-child {
+  margin-bottom: 3.36125rem;
+}
+
+.btn {
+  display: block;
+  max-width: 269.85px;
+  width: 100%;
+  background-color: var(--cor_4);
+  border-radius: 5.625rem;
+  padding: 0.6rem 0;
+  font-size: 19.2066px;
+  line-height: 23px;
+  letter-spacing: 0.055em;
+  color: var(--cor_6);
+  font-weight: 700;
+}
+
+@media (max-width: 834px) {
+  .title {
+    font-size: 1.42435625rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0.055em;
+    margin-bottom: 1.5rem;
+  }
+
+  .card_item img {
+    max-width: 66.23px;
+    margin-bottom: 1.5rem;
+  }
+
+  .preco {
+    line-height: 1.6875rem;
+    font-size: 1.42435625rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .preco span,
+  .list {
+    font-size: 0.8012rem;
+    line-height: 0.9375rem;
+  }
+
+  .list li {
+    margin-bottom: 0.665rem;
+  }
+
+  .list li:last-child {
+    margin-bottom: 3.1575rem;
+  }
+
+  .btn {
+    max-width: 200.12px;
+    padding: 0.5rem 0;
+    font-size: 14.2435px;
+    line-height: 17px;
+    letter-spacing: 0.055em;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    height: auto;
+  }
+
+  .content_card {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 1.73rem;
+    line-height: 2.06rem;
+    letter-spacing: 0.055em;
+    margin-bottom: 1.73rem;
+  }
+
+  .card_item img {
+    max-width: 80.76px;
+    margin-bottom: 1.845625rem;
+  }
+
+  .preco {
+    line-height: 1.125rem;
+    font-size: 1.73684375rem;
+    margin-bottom: 1.845625rem;
+  }
+
+  .preco span,
+  .list {
+    font-size: 0.976975rem;
+    line-height: 0.9375rem;
+  }
+
+  .list li {
+    margin-bottom: 0.82875rem;
+  }
+
+  .list li:last-child {
+    margin-bottom: 3.868125rem;
+  }
+
+  .btn {
+    max-width: 244.03px;
+    padding: 0.4rem 0;
+    font-size: 14.2435px;
+    line-height: 17px;
+    letter-spacing: 0.055em;
+    font-weight: 700;
+  }
+}
